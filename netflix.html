@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="netflix.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+   .container {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: flex-end; /* Aligns content to the bottom */
+  align-items: center; /* Centers content horizontally */
+  height: 50vh; /* Example: container takes full viewport height */
+}   
+.footer a{
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}  
+.bg2{
+  background-color: black;
+}
+.navbar{
+  background-color: transparent;
+}
+.btn:hover{
+  background-color: red;
+  transform: scale(1.1);
+}
+    </style>
+</head>
+<body>
+<!--bgimage-->
+<div style="  background-image: url('background.png'); background-position: center; height: 100vh;">
+<!--navbar-->
+    <nav class="navbar ">
+  <div class="container-fluid  mx-5">
+    <img src="icon.png" alt="logo" width="200px" height="200px" class="d-inline-block align-text-top">
+    <li class=" nav-item dropdownd-flex"></li>
+      <div class="dropdown">
+  <button class="btn dropdown-toggle bg-transparent text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false"style="border: 1px solid white;">
+    English
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">English</a></li>
+    <li><a class="dropdown-item" href="#">Hindi</a></li>
+  </ul>
+      <button class="btn btn-danger" type="submit">Sign In</button>
+      </div>
+  </div>
+    </nav>
+<div class="container" style="color: white;"> <h1 style="text-align: center; color: white; font-size: 60px;"><b>Unlimited movies,</h1> <h1 style="font-size: 60px;">TV shows and more</b></h1>
+    <h5 class="py-4">Starts at ₹149. Cancel at any time.</h5>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="mb-3">
+  <input type="email" class="bg-transparent" id="Input" placeholder="Enter email" style="width: 400px; height: 10vh; border: 3px solid white;">
+      <button class="btn btn-danger" type="submit" style="width: 200px; height: 10vh;">Get Start ></button>
+    </div>
+</div>
+</div>
+<div style="position:relative; width:100%; overflow:hidden; background-color: black;">
+  <svg viewBox="0 0 1000 250" width="100%" height="150" preserveAspectRatio="none"
+       style="display:block;">
+    <defs>
+      <!-- Netflix gradient (red → orange → pink) -->
+      <linearGradient id="nf-line" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#e50914"/>   <!-- Netflix red -->
+        <stop offset="50%" stop-color="#ff6a00"/>  <!-- orange -->
+        <stop offset="100%" stop-color="#ff4aa5"/> <!-- pink -->
+      </linearGradient>
+
+      <!-- Blue fading background -->
+      <linearGradient id="blue-fade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(0,120,255,0.7)"/>
+        <stop offset="100%" stop-color="rgba(0,0,0,1)"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Blue gradient fill under curve -->
+    <path d="M 0 100 Q 500 0 1000 100 L 1000 250 L 0 250 Z"
+          fill="url(#blue-fade)"/>
+
+    <!-- Curved gradient line -->
+    <path d="M 0 100 Q 500 0 1000 100"
+          fill="none"
+          stroke="url(#nf-line)"
+          stroke-width="4"/>
+  </svg>
+</div>
+</div>
+<div class="bg2">
+  <h3 class="py-5 mx-5"  style="color: white;">Trending Now</h3>
+  <!--cards-->
+  <div class="row px-5">
+  <div class="col">
+    <div class="card mx-5" style="width: 40vh; height: 60vh;">
+      <img src="wal1.png.jpg" class="card-img-top" alt="..." style="height: 60vh;">
+      </div>
+    </div>
+  <div class="col">
+    <div class="card" style="width: 40vh; height: 60vh;">
+      <img src="wal2.png.jpg" class="card-img-top" alt="..." style="height: 60vh;">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 40vh;height: 60vh;">
+      <img src="wal3.png.jpg" class="card-img-top" style="height: 60vh;">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 40vh; height: 60vh;">
+      <img src="wal4.png.jpg" class="card-img-top" alt="..." style="height: 60vh;">
+    </div>
+  </div>
+</div>
+<h3 class="py-5 mx-5"  style="color: white;">More reasons to join</h3>
+<!--text card-->
+<div class="row  px-5">
+  <div class="col">
+    <div class="card mx-5" style="width: 40vh;height: 50vh;">
+      <div class="card-body text-white" style=" background: linear-gradient(149deg,#192247 0%,#210e17 96.86%);">
+        <h5 class="card-title">Enjoy on your TV</h5>
+        <p class="card-text">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 40vh;height: 50vh;">
+      <div class="card-body text-white" style="background: linear-gradient(149deg,#192247 0%,#210e17 96.86%);">
+        <h5 class="card-title">Download your shows to watch offline</h5>
+        <p class="card-text">Save your favourites easily and always have something to watch.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 40vh; height: 50vh;">
+      <div class="card-body text-white" style="background: linear-gradient(149deg,#192247 0%,#210e17 96.86%);">
+        <h5 class="card-title">Watch everywhere</h5>
+        <p class="card-text">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 40vh; height: 50vh";>
+      <div class="card-body text-white" style="background: linear-gradient(149deg, #192247 0%,#210e17 96.86%);">
+        <h5 class="card-title">Create profiles for kids</h5>
+        <p class="card-text">Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<h3  class="py-5 mx-5" style="color: white;">Frequently Asked Questions</h3>
+<!--accordio-->
+<div class="accordion accordion-flush px-5 mx-5" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #403F3E; height: 12vh;">
+        What is Netflix?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body text-white" style="background-color: #403F3E">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br><br>
+
+You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo "style="background-color: #403F3E; height: 12vh;">
+      How much does Netflix cost
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body text-white" style="background-color: #403F3E">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background-color: #403F3E; height: 12vh;">
+        Where can I watch?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body text-white" style="background-color: #403F3E">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>
+
+You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+</div>
+    </div>
+  </div>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" style="background-color: #403F3E; height: 12vh;">
+        How do I cancel?
+      </button>
+    </h2>
+    <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body text-white" style="background-color: #403F3E">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive" style="background-color: #403F3E; height: 12vh;">
+        What can I watch on Netflix?
+      </button>
+    </h2>
+    <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body text-white" style="background-color: #403F3E">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix" style="background-color: #403F3E; height: 12vh;">
+        Is Netflix good for kids?
+      </button>
+    </h2>
+    <div id="flush-collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body text-white" style="background-color: #403F3E">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<BR><BR>
+
+Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<h6 class="mx-5 py-5" style="color: white; justify-content: center; align-content: center; display: flex;">Ready to watch? Enter your email to create or restart your membership.</h6>
+    <div class="mb-3" style="justify-content: center; align-content: center; display: flex;">
+  <input type="email" class="bg-transparent" id="Input" placeholder="Enter email" style="width: 400px; height: 10vh; border: 3px solid white;">
+      <button class="btn btn-danger" type="submit" style="width: 200px; height: 10vh;">Get Start ></button>
+    </div>
+    <footer class="mb-5">
+<p style="color: white;">Questions? Call<a href="" style="color: white;">000-800-919-1743</a></p>
+      <div class="footer d-flex  justify-content-between">
+        <div>
+          <a href="#">FAQ</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Privacy</a>
+          <a href="#">Speed Test</a>
+        </div>
+        <div>
+          <a href="#">Help Centre</a>
+          <a href="#">Jobs</a>
+         <a href="#">Cookie Preferences</a>
+          <a href="#">Legal Notices</a>
+        </div>
+        <div>
+          <a href="#">Account</a>
+          <a href="#">Ways to Watch</a>
+          <a href="#">Corporate Information</a>
+          <a href="#">Only on Netflix</a>
+        </div>
+        <div>
+          <a href="#">Media Centre</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    <div class="mx-3 " style="color: white;">
+      <select class="form-select form-select-sm w-auto d-inline-block bg-transparent" style="color: white;">
+        <option selected>English</option>
+        <option value="1">Hindi</option>
+      </select>
+    <P class="mx-5">Netflix India</P>
+    </footer>
+    <P  class="mx-5" style="font-size: 15px; color: white;">This page is protected by google reCAPTCHA to ensure you're not a bot.<a href="#">Learn more</a></P>
+</div>
+</div>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script> 
+</body>
+</html>

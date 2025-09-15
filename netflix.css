@@ -1,0 +1,24 @@
+   .paragraph {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: flex-end; /* Aligns content to the bottom */
+  align-items: center; /* Centers content horizontally */
+  height: 50vh; /* Example: container takes full viewport height */
+}   
+.footer a{
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}  
+.bg2{
+  background-color: black;
+}
+.navbar{
+  background-color: transparent;
+}
+@media(max-width:808px) {
+    .container{text-align: center;}
+}
+@media(max-width:562px) {
+  .navbar{text-align: center;}
+}
